@@ -1,1 +1,24 @@
 /* Add CSS Styling */
+
+.odd {
+    background-color: #ffc0cb;
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+.large-font {
+    font-size: 20px;
+}
+
+#two {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+/*
+To reduce duplicate code, a class can be added to the element with id.
+*/
+
+#four {
+    background-color: hsl(120, 100%, 75%);
+    font-weight: bold;
+}
