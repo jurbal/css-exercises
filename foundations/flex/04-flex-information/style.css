@@ -24,3 +24,29 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/*Changes*/
+
+/*Center everything rather than each individual component*/
+body {
+  text-align: center;
+}
+
+/*No need for flexbox for the title*/
+.title {
+  margin-bottom: 32px;
+}
+
+.boxes{
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/*Reuse same class name instead of creating several unneccesary ones*/
+/*Block elements stack vertically by default, text-align: center is inherited, max-width constraints the width and wraps the text - no need for flexbox*/
+/*Flexbox is not inherited (children become flex items instead) - display: flex must be set for each element that has to become a flex container*/
+
+.info {
+  max-width: 200px;
+}
