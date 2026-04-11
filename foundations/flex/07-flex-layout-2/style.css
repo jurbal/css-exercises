@@ -37,13 +37,13 @@ body {
 
 .container {
   display: flex;
-  flex-wrap: nowrap;
   flex: 1;
 }
 
 .sidebar {  
   width: 300px;
   background: royalblue;
+  flex-shrink: 0;
   padding: 16px;
  
 }
@@ -52,25 +52,25 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  height: 250px;
-  width: 250px;
+  width: 300px;
+  padding: 16px;
 }
 
 .all-cards {
   padding: 48px;
   display: flex;
   flex-wrap: wrap;
-  gap: 0px;
-  align-content: flex-start;
-
+  gap: 32px;
 }
 
 li {
   list-style: none;
   font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: white;
-  text-decoration: none;;
+  text-decoration: none;
 }
